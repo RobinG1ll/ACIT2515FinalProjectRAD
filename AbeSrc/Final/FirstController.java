@@ -1,13 +1,16 @@
 package Final;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
-public class FirstController {
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+
+public class FirstController implements Initializable{
 
     @FXML
     private Button Go2;
@@ -24,11 +27,29 @@ public class FirstController {
     @FXML
     private TableColumn HCount;
 
-    public void Go2Press(ActionEvent event){
-        System.out.println(fileLoc.getText());
+
+    @FXML private TableView<IPHandler> tableView;
+    @FXML private TableColumn<IPHandler, String> UserId;
+    @FXML private TableColumn<IPHandler, String> UserName;
+    @FXML private TableColumn<IPHandler, String> Active;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        UserId.setCellValueFactory(new PropertyValueFactory<IPHandler, String>("id"));
+        UserName.setCellValueFactory(new PropertyValueFactory<IPHandler, String>("name"));
+        Active.setCellValueFactory(new PropertyValueFactory<IPHandler, String>("active"));
+
+        tableView.getItems().setAll(parseUserList());
+    }
+    private List<IPHandler> parseUserList(){
+        // parse and construct User datamodel list by looping your ResultSet rs
+        // and return the list
+        return null;
     }
 
 
-
+    public void Go2Press(ActionEvent event){
+        System.out.println(fileLoc.getText());
+    }
 
 }
