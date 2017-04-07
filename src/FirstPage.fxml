@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="329.0" prefWidth="533.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Final.FirstController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="276.0" prefWidth="656.0" styleClass="root" stylesheets="@rachacha.css">
+         <children>
+            <Button fx:id="Go2" layoutX="374.0" layoutY="152.0" mnemonicParsing="false" onAction="#Go2Press" prefHeight="32.0" prefWidth="96.0" styleClass=".root" text="Done" />
+            <Label alignment="CENTER" layoutX="192.0" layoutY="29.0" prefHeight="60.0" prefWidth="150.0" stylesheets="@rachacha.css" text="Welcome To rAdAdmin" />
+            <TextField fx:id="fileLoc" layoutX="193.0" layoutY="155.0" promptText="File Location" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
