@@ -8,24 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * This example demonstrates various usage scenerios for jNetPcap API. The test 
- * file used in this example can be found under the "tests" directory located 
- * under the root installation directory of the source package. The tests 
- * directory is not normally provided with binary distribution of jnetpcap. The 
- * test file contains 483 packets most of which are http or tcp segments. 
- *
- * @author Mark Bednarczyk 
- * @author Sly Technologies, Inc. 
- */
 public class jnet {
 
-    /**
-     * Various examples 
-     *
-     * @param args
-     *          none expected 
-     */
     public static void main(String[] args) {  
   
         /* 
@@ -257,8 +241,8 @@ public class jnet {
                 }
             }
             System.out.println();
-        }  
-  
+        }
+        */
         /* 
          * We still haven't read all the packets from our offline file. Here is an 
          * easier way to retrieve all the packets while grouping them into flows. 
