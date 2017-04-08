@@ -6,17 +6,22 @@ import javafx.stage.Stage;
 
 public class main extends Application {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("FirstPage.fxml"));
-        primaryStage.setTitle("rAdAdmin");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-
-    }
-
+    Stage window;
+    Scene scene1;
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        window = primaryStage;
+
+        Parent page1 = FXMLLoader.load(getClass().getResource("FirstPage.fxml"));
+        scene1 = new Scene(page1, 656,276);
+
+        window.setScene(scene1);
+        window.setTitle("RADadmin");
+        window.show();
     }
 }

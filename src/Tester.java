@@ -6,7 +6,7 @@ import org.jnetpcap.protocol.network.Ip4;
  */
 public class Tester {
 
-    final static PcapFile pcap = new PcapFile("wireshark.pcap");
+    final static PcapFile pcap = new PcapFile("tests/test.pcap");
 
     public static void main(String[] args) throws ExceptionReadingPcapFiles {
 
