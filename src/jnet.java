@@ -242,7 +242,7 @@ public class jnet {
             }
             System.out.println();
         }
-        */
+
         /* 
          * We still haven't read all the packets from our offline file. Here is an 
          * easier way to retrieve all the packets while grouping them into flows. 
