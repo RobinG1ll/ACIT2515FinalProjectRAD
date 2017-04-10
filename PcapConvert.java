@@ -1,4 +1,5 @@
-import java.util.Collection;
+package Final;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +28,7 @@ import org.jnetpcap.protocol.tcpip.Tcp;
      */
     public class PcapConvert {
 
-        public Collection<JFlow> readFile(String filename) {
+        public String readFile(String filename) {
 
         /*
          * Example #1 open offline capture file for reading packets.
@@ -289,6 +290,6 @@ import org.jnetpcap.protocol.tcpip.Tcp;
          */
             pcap.close();
 
-            return superFlowMap.values();
+            return superFlowMap.values().toString();
         }
     }
