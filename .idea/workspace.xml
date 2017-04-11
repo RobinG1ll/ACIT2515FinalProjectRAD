@@ -4,18 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/PcapSplitter.java" line="76" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a42db04e-87ca-451a-b610-acc1e42a17cd" name="Default" comment="Stuff">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/Controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/ExceptionReadingPcapFiles.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/PcapFile$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/PcapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/PcapSplitter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/main.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geo/target/classes/com/memorynotfound/geoip/GeoIPv4.class" afterPath="$PROJECT_DIR$/geo/target/classes/com/memorynotfound/geoip/GeoIPv4.class" />
+    <list default="true" id="a42db04e-87ca-451a-b610-acc1e42a17cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geo/.idea/workspace.xml" afterPath="$PROJECT_DIR$/geo/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geo/src/main/java/com/memorynotfound/geoip/GeoIPv4.java" afterPath="$PROJECT_DIR$/geo/src/main/java/com/memorynotfound/geoip/GeoIPv4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PcapSplitter.java" afterPath="$PROJECT_DIR$/src/PcapSplitter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SecondPage.fxml" afterPath="$PROJECT_DIR$/src/SecondPage.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +22,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TableContent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TableContent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TableContent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -61,6 +52,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SecondPage.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SecondPage.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="178" lean-forward="false" selection-start-line="10" selection-start-column="178" selection-end-line="10" selection-end-column="178" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -87,7 +91,6 @@
         <option value="$PROJECT_DIR$/src/FirstController.java" />
         <option value="$PROJECT_DIR$/src/Tester.java" />
         <option value="$PROJECT_DIR$/src/Controller.java" />
-        <option value="$PROJECT_DIR$/src/SecondPage.fxml" />
         <option value="$PROJECT_DIR$/src/FirstPage.fxml" />
         <option value="$PROJECT_DIR$/src/lalal.java" />
         <option value="$PROJECT_DIR$/src/DNSCache.java" />
@@ -96,6 +99,7 @@
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/TableContent.java" />
         <option value="$PROJECT_DIR$/src/PcapSplitter.java" />
+        <option value="$PROJECT_DIR$/src/SecondPage.fxml" />
       </list>
     </option>
   </component>
@@ -697,7 +701,7 @@
       <workItem from="1491865853859" duration="65000" />
       <workItem from="1491866334435" duration="132000" />
       <workItem from="1491892056769" duration="1225000" />
-      <workItem from="1491893681262" duration="718000" />
+      <workItem from="1491893681262" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="Testing">
       <created>1490388908569</created>
@@ -741,11 +745,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491865874988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Stuff">
+      <created>1491894412382</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1491894412382</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16371000" />
+    <option name="totallyTimeSpent" value="16730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -982,17 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SecondPage.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="178" lean-forward="false" selection-start-line="11" selection-start-column="178" selection-end-line="11" selection-end-column="178" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstPage.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1066,6 +1066,17 @@
             <element signature="e#1377#1378#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SecondPage.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="178" lean-forward="false" selection-start-line="10" selection-start-column="178" selection-end-line="10" selection-end-column="178" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>
