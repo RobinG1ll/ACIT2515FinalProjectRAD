@@ -11,7 +11,7 @@ public class GeoIPv4 {
     static {
         try {
             lookUp = new LookupService(
-                    GeoIPv4.class.getResource("/GeoLiteCity.dat").getFile(),
+                    GeoIPv4.class.getResource("C:\\Users\\Robin\\Desktop\\Class work\\Term 2\\ACIT - 2515 - Software Design\\ACIT2515FinalProjectRAD\\geo\\src\\main\\resources\\GeoLiteCity.dat").getFile(),
                     LookupService.GEOIP_MEMORY_CACHE);
 
             System.out.println("GeoIP Database loaded: " + lookUp.getDatabaseInfo());

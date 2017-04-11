@@ -11,6 +11,7 @@ public class PcapSplitter extends PcapConvert{
     ArrayList<String> SourceIP = new ArrayList<>();
     ArrayList<String> DestinationIP = new ArrayList<>();
     ArrayList<ArrayList> Master = new ArrayList<>();
+    ArrayList<TableContent> info = new ArrayList<>();
 
 
     public void PcapSplit(String string){
@@ -48,6 +49,11 @@ public class PcapSplitter extends PcapConvert{
         Master.add(SourceIP);
         Master.add(DestinationIP);
         Master.add(HitCounts);
+
+        for(int x = 0 ; x < size ; x++) {
+            info.add(new TableContent(SourceIP.get(x), DestinationIP.get(x), HitCounts.get(x)));
+        }
+
     }
 
     public void clearAll(){
@@ -63,5 +69,11 @@ public class PcapSplitter extends PcapConvert{
             i--;
         }
         return new Integer(s.substring(i));
+    }
+
+    public void addConnection(String a, String b){
+        if (!hashmap.containsKey(a)) {
+            hashmap.put(a, new HashSet<String>());
+        }hashmap.get(a).add(src);}
     }
 }
