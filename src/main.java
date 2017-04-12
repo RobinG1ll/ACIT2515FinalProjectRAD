@@ -7,28 +7,39 @@ import javafx.stage.Stage;
 public class main extends Application {
 
     Stage window;
-    Scene scene1;
+    Scene scene1, scene2;
 
     public static void main(String[] args) {
         launch(args);
-
-        PcapSplitter newone = new PcapSplitter();
-        newone.PcapSplit(newone.readFile("C:\\Users\\Robin\\Desktop\\Class work\\Term 2\\ACIT - 2515 - Software Design\\FinalProject\\tests\\test.pcap"));
-        newone.MasterList();
-        System.out.println(newone.Master);
-        System.out.println(newone.HitCounts);
-        System.out.println(newone.SourceIP);
-        System.out.println(newone.DestinationIP);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         window = primaryStage;
+        ControllerManager manager = ControllerManager.getInstance();
+        manager.setStage(primaryStage);
 
-        Parent page1 = FXMLLoader.load(getClass().getResource("FirstPage.fxml"));
+        FXMLLoader newLoader;
+
+        newLoader = new FXMLLoader(getClass().getResource("FirstPage.fxml"));
+        Parent page1 = newLoader.load();
+        Controller controller1 = (Controller)newLoader.getController();
+
+        newLoader = new FXMLLoader(getClass().getResource("SecondPage.fxml"));
+        Parent page2 = newLoader.load();
+        Controller controller2 = newLoader.getController();
+
+        controller1.setManager(manager);
+        controller2.setManager(manager);
+
         scene1 = new Scene(page1, 656,276);
+        scene2 = new Scene(page2, 656,276);
+        manager.add(SceneName.MAIN, scene1, controller1);
+        manager.add(SceneName.SECOND, scene2, controller2);
 
-        window.setScene(scene1);
+
+        //window.setScene(scene1);
+        manager.setScene(SceneName.MAIN);
         window.setTitle("RADadmin");
         window.show();
     }

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" prefHeight="329.0" prefWidth="533.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<GridPane alignment="center" hgap="10" prefHeight="329.0" prefWidth="533.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SecController">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -19,14 +19,13 @@
       <AnchorPane prefHeight="352.0" prefWidth="533.0" styleClass="root" stylesheets="@rachacha.css">
          <children>
             <Button layoutX="477.0" layoutY="290.0" mnemonicParsing="false" text="Back" />
-            <TableView layoutX="14.0" layoutY="14.0" prefHeight="183.0" prefWidth="504.0">
+            <TableView fx:id="newTable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="505.0">
               <columns>
-                <TableColumn fx:id="Source" prefWidth="208.0" text="Source IP" />
-                <TableColumn fx:id="Dest" prefWidth="208.0" text="Destination IP" />
-                 <TableColumn fx:id="Count" prefWidth="87.0" text="Hit Count" />
+                <TableColumn fx:id="Source" prefWidth="209.0" text="Source Ip" />
+                <TableColumn fx:id="Dest" prefWidth="186.0" text="Destination Ip" />
+                <TableColumn fx:id="Count" prefWidth="109.0" text="Packet Count" />
               </columns>
             </TableView>
-            <TableView layoutX="14.0" layoutY="210.0" prefHeight="70.0" prefWidth="504.0" />
          </children></AnchorPane>
    </children>
 </GridPane>

@@ -1,16 +1,20 @@
 import java.util.ArrayList;
 
-
 /**
  * Created by Daniel on 4/7/2017.
  */
+
 public class PcapSplitter extends PcapConvert{
 
     ArrayList<String> IPs = new ArrayList<>();
     ArrayList<Integer> HitCounts = new ArrayList<>();
     ArrayList<String> SourceIP = new ArrayList<>();
     ArrayList<String> DestinationIP = new ArrayList<>();
-    ArrayList<ArrayList> Master = new ArrayList<>();
+
+    public ArrayList<TableContent> getInfo() {
+        return info;
+    }
+
     ArrayList<TableContent> info = new ArrayList<>();
 
 
@@ -46,18 +50,13 @@ public class PcapSplitter extends PcapConvert{
     public void MasterList(){
         RetrieveHits();
         RetrieveInfo();
-        Master.add(SourceIP);
-        Master.add(DestinationIP);
-        Master.add(HitCounts);
-
-        for(int x = 0 ; x < size ; x++) {
-            info.add(new TableContent(SourceIP.get(x), DestinationIP.get(x), HitCounts.get(x)));
+        for(int i = 0; i < HitCounts.size(); i++){
+            info.add(new TableContent(SourceIP.get(i), DestinationIP.get(i), HitCounts.get(i)));
         }
-
     }
 
     public void clearAll(){
-        Master.clear();
+        info.clear();
         SourceIP.clear();
         DestinationIP.clear();
         IPs.clear();
@@ -69,11 +68,5 @@ public class PcapSplitter extends PcapConvert{
             i--;
         }
         return new Integer(s.substring(i));
-    }
-
-    public void addConnection(String a, String b){
-        if (!hashmap.containsKey(a)) {
-            hashmap.put(a, new HashSet<String>());
-        }hashmap.get(a).add(src);}
     }
 }
