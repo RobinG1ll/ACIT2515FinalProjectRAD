@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a42db04e-87ca-451a-b610-acc1e42a17cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ControllerManager.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/IPHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/Tester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/jnet$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FinalProject/jnet.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geo/.idea/workspace.xml" afterPath="$PROJECT_DIR$/geo/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinalProject/FirstPage.fxml" afterPath="$PROJECT_DIR$/out/production/FinalProject/FirstPage.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FinalProject/SecondPage.fxml" afterPath="$PROJECT_DIR$/out/production/FinalProject/SecondPage.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller.java" afterPath="$PROJECT_DIR$/src/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FirstPage.fxml" afterPath="$PROJECT_DIR$/src/FirstPage.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PcapSplitter.java" afterPath="$PROJECT_DIR$/src/PcapSplitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SecondPage.fxml" afterPath="$PROJECT_DIR$/src/SecondPage.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -774,7 +761,7 @@
       <workItem from="1491928064377" duration="3211000" />
       <workItem from="1491951271063" duration="6216000" />
       <workItem from="1491957961306" duration="27000" />
-      <workItem from="1491958066367" duration="3410000" />
+      <workItem from="1491958066367" duration="3540000" />
     </task>
     <task id="LOCAL-00001" summary="Testing">
       <created>1490388908569</created>
@@ -825,14 +812,28 @@
       <option name="project" value="LOCAL" />
       <updated>1491894412382</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed/added code">
+      <created>1491961522753</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1491961522753</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Scene changing and adding values to table">
+      <created>1491961566914</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1491961566914</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32617000" />
+    <option name="totallyTimeSpent" value="32747000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -912,7 +913,9 @@
     <MESSAGE value="Deleted unneeded files" />
     <MESSAGE value="added geo-location folder" />
     <MESSAGE value="Stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stuff" />
+    <MESSAGE value="Changed/added code" />
+    <MESSAGE value="Scene changing and adding values to table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scene changing and adding values to table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
