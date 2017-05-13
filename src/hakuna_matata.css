@@ -1,0 +1,30 @@
+/**
+ * ACIT 2515 Java Shark - Final Project - RADadmin
+ *
+ * @author Robin Gill - A00823034
+ * @author Abraham Al Jundi - A00988199
+ * @author Daniel Kole - A00994261
+ */
+
+.root{
+    -fx-background-color: linear-gradient(black, rgb(153,0,0), black);
+    -fx-background-image: url("map.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.main_title{
+    -fx-text-fill: white;
+}
+
+.table .table_column {
+    -fx-alignment: center;
+}
+
+.table .scroll-bar:horizontal .increment-arrow,
+.table .scroll-bar:horizontal .decrement-arrow,
+.table .scroll-bar:horizontal .increment-button,
+.table .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}

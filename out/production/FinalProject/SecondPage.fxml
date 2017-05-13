@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600" prefWidth="800" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SecController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@hakuna_matata.css">
+         <children>
+            <Button fx:id="backBut" layoutX="671.0" layoutY="201.0" mnemonicParsing="false" onAction="#backBut" prefHeight="48.0" prefWidth="91.0" styleClass="sec_back" stylesheets="@hakuna_matata.css" text="Back">
+               <font>
+                  <Font name="Californian FB Bold" size="25.0" />
+               </font></Button>
+            <TableView fx:id="newTable" layoutX="175.0" layoutY="39.0" onMouseClicked="#clickItem" prefHeight="422.0" prefWidth="450.0" stylesheets="@hakuna_matata.css">
+              <columns>
+                <TableColumn fx:id="Source" prefWidth="150.0" text="Source Ip">
+                     <styleClass>
+                        <String fx:value="column_source" />
+                        <String fx:value="table_column" />
+                     </styleClass></TableColumn>
+                <TableColumn fx:id="Dest" prefWidth="150.0" text="Destination Ip">
+                     <styleClass>
+                        <String fx:value="column_dest" />
+                        <String fx:value="table_column" />
+                     </styleClass></TableColumn>
+                <TableColumn fx:id="Count" prefWidth="150.0" text="Packet Count">
+                     <styleClass>
+                        <String fx:value="column_hit" />
+                        <String fx:value="table_column" />
+                     </styleClass></TableColumn>
+              </columns>
+               <styleClass>
+                  <String fx:value="info_table" />
+                  <String fx:value="table" />
+               </styleClass>
+            </TableView>
+            <TableView fx:id="infoTable" layoutX="70.0" layoutY="479.0" prefHeight="74.0" prefWidth="660.0" stylesheets="@hakuna_matata.css">
+              <columns>
+                  <TableColumn fx:id="ipadd" prefWidth="100.0" text="IP">
+                     <styleClass>
+                        <String fx:value="table_column" />
+                        <String fx:value="column_ip" />
+                     </styleClass>
+                  </TableColumn>
+                <TableColumn fx:id="country" text="Country">
+                     <styleClass>
+                        <String fx:value="column_country" />
+                        <String fx:value="table_column" />
+                     </styleClass>
+                  </TableColumn>
+                <TableColumn fx:id="region" text="Region">
+                     <styleClass>
+                        <String fx:value="column_region" />
+                        <String fx:value="table_column" />
+                     </styleClass>
+                  </TableColumn>
+                  <TableColumn fx:id="city" text="City">
+                     <styleClass>
+                        <String fx:value="column_city" />
+                        <String fx:value="table_column" />
+                     </styleClass></TableColumn>
+                  <TableColumn fx:id="postal" text="Postal">
+                     <styleClass>
+                        <String fx:value="column_postal" />
+                        <String fx:value="table_column" />
+                     </styleClass>
+                  </TableColumn>
+                  <TableColumn fx:id="area" text="Area Code">
+                     <styleClass>
+                        <String fx:value="column_area" />
+                        <String fx:value="table_column" />
+                     </styleClass></TableColumn>
+                  <TableColumn fx:id="latit" text="Latitude">
+                     <styleClass>
+                        <String fx:value="column_lat" />
+                        <String fx:value="table_column" />
+                     </styleClass></TableColumn>
+                  <TableColumn fx:id="longit" text="Longitude">
+                     <styleClass>
+                        <String fx:value="column_long" />
+                        <String fx:value="table_column" />
+                     </styleClass></TableColumn>
+              </columns>
+               <styleClass>
+                  <String fx:value="ip_table" />
+                  <String fx:value="table" />
+               </styleClass>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</GridPane>
