@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 
 /**
- * Created by Daniel on 4/7/2017.
+ * ACIT 2515 Java Shark - Final Project - RADadmin
+ *
+ * @author Robin Gill - A00823034
+ * @author Abraham Al Jundi - A00988199
+ * @author Daniel Kole - A00994261
  */
 
 public class PcapSplitter extends PcapConvert{
@@ -10,12 +14,11 @@ public class PcapSplitter extends PcapConvert{
     ArrayList<Integer> HitCounts = new ArrayList<>();
     ArrayList<String> SourceIP = new ArrayList<>();
     ArrayList<String> DestinationIP = new ArrayList<>();
+    ArrayList<TableContent> info = new ArrayList<>();
 
     public ArrayList<TableContent> getInfo() {
         return info;
     }
-
-    ArrayList<TableContent> info = new ArrayList<>();
 
 
     public void PcapSplit(String string){
@@ -60,6 +63,7 @@ public class PcapSplitter extends PcapConvert{
         SourceIP.clear();
         DestinationIP.clear();
         IPs.clear();
+        HitCounts.clear();
     }
 
     public Integer lastInteger(String s) {

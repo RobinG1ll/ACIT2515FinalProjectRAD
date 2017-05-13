@@ -4,8 +4,13 @@ import javafx.stage.Stage;
 import java.util.HashMap;
 
 /**
- * Created by Robin on 11-Apr-17.
+ * ACIT 2515 Java Shark - Final Project - RADadmin
+ *
+ * @author Robin Gill - A00823034
+ * @author Abraham Al Jundi - A00988199
+ * @author Daniel Kole - A00994261
  */
+
 public class ControllerManager {
 
     private static ControllerManager instance = new ControllerManager();

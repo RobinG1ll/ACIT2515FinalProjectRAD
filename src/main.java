@@ -4,10 +4,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * ACIT 2515 Java Shark - Final Project - RADadmin
+ *
+ * @author Robin Gill - A00823034
+ * @author Abraham Al Jundi - A00988199
+ * @author Daniel Kole - A00994261
+ */
+
 public class main extends Application {
 
     Stage window;
-    Scene scene1, scene2;
+    Scene scene1, scene2;;
 
     public static void main(String[] args) {
         launch(args);
@@ -23,7 +31,7 @@ public class main extends Application {
 
         newLoader = new FXMLLoader(getClass().getResource("FirstPage.fxml"));
         Parent page1 = newLoader.load();
-        Controller controller1 = (Controller)newLoader.getController();
+        Controller controller1 = newLoader.getController();
 
         newLoader = new FXMLLoader(getClass().getResource("SecondPage.fxml"));
         Parent page2 = newLoader.load();
@@ -32,13 +40,11 @@ public class main extends Application {
         controller1.setManager(manager);
         controller2.setManager(manager);
 
-        scene1 = new Scene(page1, 656,276);
-        scene2 = new Scene(page2, 656,276);
+        scene1 = new Scene(page1, 800,600);
+        scene2 = new Scene(page2, 800,600);
         manager.add(SceneName.MAIN, scene1, controller1);
         manager.add(SceneName.SECOND, scene2, controller2);
 
-
-        //window.setScene(scene1);
         manager.setScene(SceneName.MAIN);
         window.setTitle("RADadmin");
         window.show();

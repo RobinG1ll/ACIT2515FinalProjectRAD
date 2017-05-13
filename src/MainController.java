@@ -11,8 +11,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * Created by Robin on 11-Apr-17.
+ * ACIT 2515 Java Shark - Final Project - RADadmin
+ *
+ * @author Robin Gill - A00823034
+ * @author Abraham Al Jundi - A00988199
+ * @author Daniel Kole - A00994261
  */
+
 public class MainController extends Controller{
 
     @FXML
@@ -26,12 +31,6 @@ public class MainController extends Controller{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-    }
-
-    private Stage newStage;
-
-    public void setStage(Stage stage){
-        newStage = stage;
     }
 
     public void doneBut(){
@@ -48,7 +47,7 @@ public class MainController extends Controller{
     @FXML
     public void selectBut() {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("PCAP Files", "*.pcap", "*.pcapng"));
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("PCAP Files", "*.pcap"));
         fileChooser.setTitle("Open Resource File");
         File file = fileChooser.showOpenDialog(new Stage());
         fileLoc.setText(file.getAbsolutePath());
